@@ -1,0 +1,9 @@
+# quanly_baotro_xh/.htaccess
+RewriteEngine On
+
+# Bỏ qua nếu là file hoặc thư mục thực tế
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Chuyển hướng tất cả request đến public/index.php
+RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]

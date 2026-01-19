@@ -1,0 +1,17 @@
+# Vendor / thư viện
+/vendor/
+/node_modules/
+
+# File môi trường
+.env
+
+# Log
+*.log
+
+# Upload (nếu có)
+uploads/*
+!uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
